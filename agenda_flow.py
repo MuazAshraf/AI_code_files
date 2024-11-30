@@ -15,7 +15,7 @@ OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
 client = OpenAI(api_key=OPENAI_API_KEY)
 API_ENDPOINT = "https://api.fireflies.ai/graphql"
-API_KEY = "1ae0d60c-300d-48a2-9542-bd9a61627e5c"
+API_KEY = "your key"
 headers = {
     "Authorization": f"Bearer {API_KEY}",
     "Content-Type": "application/json"
@@ -113,8 +113,8 @@ def generate_agenda(transcript_text):
 # Function to send an email with the meeting agenda
 def send_agenda_email(client_email, agenda):
     """Send the meeting agenda to a client via SendGrid."""
-    sender_email = "muazashraf456@gmail.com"
-    # sender_password = "lunitiC2341"
+    sender_email = "youremail@.com"
+   
 
     message = Mail(
     from_email=sender_email,
